@@ -39,20 +39,17 @@ fn list_dir(dir: &Path){
                 }
             }
         }
-        let esc_char = vec![27];
-        let esc = String::from_utf8(esc_char).unwrap();
-        let reset: u8 = 0;
-        let bright: u8 = 1;
-        let black: u8 = 30;
-        let red: u8 = 31;
-        folders.into_iter()
-               .map(|x| )
-               .collect::<Vec<_>>();
+        println!("---Folders---");
         for folder in folders{
             print!("{:?}\t", folder);
         }
         println!();
-        println!("{}", files.len());   
+        println!();
+        println!("---Files---");
+        for file in files{
+            print!("{:?}\t", file);
+        }
+        println!();
     }
 }
 
