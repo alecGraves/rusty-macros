@@ -50,7 +50,7 @@ fn list_dir(dir: &Path){
             print_string += &folder;
             print_string += "\n";
         }
-        print_string += "\n\n---Files---\n";
+        print_string += "\n---Files---\n";
         for file in files{
             print_string += &file;
             print_string += "\n";
