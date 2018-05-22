@@ -21,7 +21,7 @@ Once you have the .exe's, move them all to one folder (typically name bin), and 
 (in windows 10, 
 1. search for 'edit environment variables for your account'
 2. double click on Path in the user variables (top box)
-3. click New and add the path to your bin
+3. click New and add the path to your ```bin``` folder
 )
 
 Then you can restart cmd, and you should be able to use the macros from any folder!
