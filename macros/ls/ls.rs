@@ -23,6 +23,7 @@ fn parse(args: &[String]){
 
 fn list_dir(dir: &Path){
     if let Ok(entries) = fs::read_dir(dir) {
+        // TODO: check for * in the input, and choose files accordingly
 
         let entries = entries.collect::<Vec<_>>();
         let length = entries.len();
@@ -56,6 +57,8 @@ fn list_dir(dir: &Path){
             print_string += "\n";
         }
         print!("{}", print_string);
+    } else {
+        println!("error: directory not found")
     }
 }
 
@@ -72,7 +75,7 @@ fn print_usage() {
     println!("USAGE:");
     println!("ls <path/to/path1/> ... <path/to/pathN/>\n");
     println!("Outputs the files and folders in path1 ... pathN");
-    println!("Outputs the files and folders of current path if no arguments given.\n\n");
+    println!("Outputs the files and folders of current path if no arguments given.\n");
 }
 
 fn exit() {
