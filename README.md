@@ -17,7 +17,13 @@ Build the .rs programs with rustc as shown below. For me, the program is slow to
 
 If you do not want to build the macros from source, you can access [prebuilt ones hosted on my onedrive](https://kennesawedu-my.sharepoint.com/:u:/g/personal/agrave15_students_kennesaw_edu/Ed3Oll0jkglDp1T9QGB-HmABDtcJX1-9GfFMZN3bynBYBw?e=gsKUJ5)
 
-once you have the .exe's, move them all to one folder (typically name bin), and add the folder to your path. Now you can restart cmd, and you should be able to use the macros from any folder!
+Once you have the .exe's, move them all to one folder (typically name bin), and add the folder to your environment variables. 
+(in windows 10, 
+1. search for 'edit environment variables for your account'
+2. double click on Path in the user variables (top box)
+3. click New and add the path to your bin
+
+Then you can restart cmd, and you should be able to use the macros from any folder!
 
 ## Notes:
 I could use cargo, it is a nice system with plenty of functionality, but my use case is pretty simple, so instead, I am just using rustc:
